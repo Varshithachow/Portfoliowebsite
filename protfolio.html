@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            color: #fff;
+        }
+
+        .skills-list li {
+            list-style-type: none;
+            background-color: #333;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .skills-list li:hover {
+            background-color: #555;
+        }
+
+        .achievements-list li,
+        .projects-list div,
+        .contact-details p {
+            margin-bottom: 12px;
+        }
+
+        /* Additional Styles for Creativity */
+        header {
+            background-image: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f);
+            padding: 80px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+        }
+
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+        }
+
+        .bg-gradient {
+            background-image: linear-gradient(to right, #667eea, #764ba2);
+        }
+
+        .section-bg {
+            background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+            padding: 40px 0;
+            border-radius: 10px;
+        }
+
+        .section h2,
+        .skills-list li,
+        .achievements-list li,
+        .projects-list div,
+        .contact-details p {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Add more styles and animations as needed */
+    </style>
+    <title>Your Creative Portfolio</title>
+</head>
+<body class="bg-gray-900">
+
+    <!-- Background Particles Animation -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-gradient p-4 text-white">
+        <div class="container mx-auto">
+            <h1 class="text-2xl font-bold animate__animated animate__fadeIn">Varshitha</h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center">
+        <div class="container mx-auto hero-content">
+            <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeIn">Engineering Student</h2>
+            <p class="text-lg animate__animated animate__fadeIn">Passionate about AI, Machine Learning, and Problem Solving</p>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto section-bg section">
+        <h2 class="text-2xl font-bold mb-4">Skills</h2>
+        <ul class="skills-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <li>Problem Solving Skills</li>
+            <li>Good Grip of Data Structures and Algorithms</li>
+            <li>Proficient in Java Language</li>
+            <li>Python</li>
+            <li>C Languages</li>
+            <li>Social Media Skills</li>
+            <li>Leadership Skills</li>
+            <li>Communication Skills</li>
+            <li>Team Working Skills</li>
+            <li>Time Management Skills</li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="container mx-auto section-bg section">
+        <h2 class="text-2xl font-bold mb-4">Achievements</h2>
+        <ul class="achievements-list">
+            <li>Runner up at Ideathon - Awarded 3k prize money</li>
+            <li>Won gold badge in HackerRank in many programming languages</li>
+            <li>Done an Artificial Intelligence and Machine Learning internship provided by Google</li>
+            <li>Participated as a volunteer in 24 hours Hackathon</li>
+            <li>Done courses on cybersecurity and Python on Cisco - Awarded a badge</li>
+            <li>Attended interviews for internships including Google Apprenticeship program</li>
+            <li>Participated in many technical and non-technical events</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container mx-auto section-bg section">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="projects-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div>
+                <h3 class="text-lg font-bold">Brainy Bot</h3>
+                <p>This is an AI-powered conversational agent...</p>
+                <a href="https://github.com/Varshithachow/Brainy-Bot" class="text-blue-500">GitHub Link</a>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold">Sudoku Puzzle</h3>
+                <p>This is a Data structures based sudoku puzzle builder...</p>
+                <a href="https://github.com/Varshithachow/Sudoku-puzzle" class="text-blue-500">GitHub Link</a>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold">Portfolio Website</h3>
+                <p>This portfolio website itself</p>
+                <a href="#" class="text-blue-500">GitHub Link</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container mx-auto section-bg section">
+        <h2 class="text-2xl font-bold mb-4">Contact</h2>
+        <div class="contact-details">
+            <p>Email: varshichowdarymuppalla@gmail.com</p>
+            <p>LinkedIn: www.linkedin.com/in/varshitha-chowdary-7b7a25261</p>
+            <p>GitHub: https://github.com/Varshithachow</p>
+            <p>Contact No: 7013113227</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script>
+        // Your existing JavaScript code for dynamic content
+        // ... (Refer to the previous JavaScript code)
+    </script>
+
+    <script>
+        particlesJS('particles-js', {
+            // ... (Refer to the previous ParticleJS configuration)
+        });
+    </script>
+</body>
+</html>
