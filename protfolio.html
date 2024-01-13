@@ -8,9 +8,8 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            position: relative;
-            overflow: hidden;
             color: #fff;
+            margin: 0;
         }
 
         #particles-js {
@@ -37,7 +36,7 @@
 
         .skills-list li {
             list-style-type: none;
-            background-color: #333;
+            background-color: rgba(255, 255, 255, 0.1);
             padding: 10px;
             margin: 8px 0;
             border-radius: 8px;
@@ -45,7 +44,7 @@
         }
 
         .skills-list li:hover {
-            background-color: #555;
+            background-color: rgba(255, 255, 255, 0.2);
         }
 
         .achievements-list li,
@@ -56,13 +55,13 @@
 
         /* Additional Styles for Creativity */
         header {
-            background-image: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f);
+            background-image: linear-gradient(to right, #1a1a1a, #444444);
             padding: 80px 0;
             clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
         }
 
         .hero-content {
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
@@ -105,7 +104,21 @@
             }
         }
 
-        /* Add more styles and animations as needed */
+        /* Innovative Background Styles */
+        .background-code {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://your-background-image-url.jpg') repeat;
+            mix-blend-mode: overlay;
+        }
+
+        .overlay-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://your-overlay-pattern-image-url.png') repeat;
+        }
     </style>
     <title>Your Creative Portfolio</title>
 </head>
@@ -113,6 +126,10 @@
 
     <!-- Background Particles Animation -->
     <div id="particles-js"></div>
+
+    <!-- Innovative Background -->
+    <div class="background-code"></div>
+    <div class="overlay-pattern"></div>
 
     <!-- Navigation -->
     <nav class="bg-gradient p-4 text-white">
@@ -124,41 +141,10 @@
     <!-- Hero Section -->
     <header class="text-center">
         <div class="container mx-auto hero-content">
-            <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeIn">Engineering Student</h2>
-            <p class="text-lg animate__animated animate__fadeIn">Passionate about AI, Machine Learning, and Problem Solving</p>
+            <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeIn">Hello, I'm Varshitha</h2>
+            <p class="text-lg animate__animated animate__fadeIn">An Engineering Student passionate about AI, Machine Learning, and Creative Problem Solving</p>
         </div>
     </header>
-
-    <!-- Skills Section -->
-    <section class="container mx-auto section-bg section">
-        <h2 class="text-2xl font-bold mb-4">Skills</h2>
-        <ul class="skills-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <li>Problem Solving Skills</li>
-            <li>Good Grip of Data Structures and Algorithms</li>
-            <li>Proficient in Java Language</li>
-            <li>Python</li>
-            <li>C Languages</li>
-            <li>Social Media Skills</li>
-            <li>Leadership Skills</li>
-            <li>Communication Skills</li>
-            <li>Team Working Skills</li>
-            <li>Time Management Skills</li>
-        </ul>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="container mx-auto section-bg section">
-        <h2 class="text-2xl font-bold mb-4">Achievements</h2>
-        <ul class="achievements-list">
-            <li>Runner up at Ideathon - Awarded 3k prize money</li>
-            <li>Won gold badge in HackerRank in many programming languages</li>
-            <li>Done an Artificial Intelligence and Machine Learning internship provided by Google</li>
-            <li>Participated as a volunteer in 24 hours Hackathon</li>
-            <li>Done courses on cybersecurity and Python on Cisco - Awarded a badge</li>
-            <li>Attended interviews for internships including Google Apprenticeship program</li>
-            <li>Participated in many technical and non-technical events</li>
-        </ul>
-    </section>
 
     <!-- Projects Section -->
     <section class="container mx-auto section-bg section">
@@ -166,20 +152,50 @@
         <div class="projects-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div>
                 <h3 class="text-lg font-bold">Brainy Bot</h3>
-                <p>This is an AI-powered conversational agent...</p>
+                <p>An AI-powered conversational agent designed using Python, HTML, and CSS.</p>
                 <a href="https://github.com/Varshithachow/Brainy-Bot" class="text-blue-500">GitHub Link</a>
             </div>
             <div>
                 <h3 class="text-lg font-bold">Sudoku Puzzle</h3>
-                <p>This is a Data structures based sudoku puzzle builder...</p>
+                <p>A Data structures-based sudoku puzzle builder created using JavaScript.</p>
                 <a href="https://github.com/Varshithachow/Sudoku-puzzle" class="text-blue-500">GitHub Link</a>
             </div>
             <div>
                 <h3 class="text-lg font-bold">Portfolio Website</h3>
                 <p>This portfolio website itself</p>
-                <a href="#" class="text-blue-500">GitHub Link</a>
+                <a href="https://github.com/Varshithachow/Portfoliowebsite/blob/main/Example.png" class="text-blue-500">GitHub Link</a>
             </div>
         </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto section-bg section">
+        <h2 class="text-2xl font-bold mb-4">Skills</h2>
+        <ul class="skills-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <li>Strong Problem Solving Abilities</li>
+            <li>Expertise in Data Structures and Algorithms</li>
+            <li>Proficiency in Java Programming</li>
+            <li>Python Programming</li>
+            <li>C Programming</li>
+            <li>Effective Social Media Management</li>
+            <li>Leadership and Teamwork Skills</li>
+            <li>Excellent Communication Skills</li>
+            <li>Effective Time Management</li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="container mx-auto section-bg section">
+        <h2 class="text-2xl font-bold mb-4">Achievements</h2>
+        <ul class="achievements-list">
+            <li>Secured the Runner-up position at Ideathon - Awarded 3k prize money</li>
+            <li>Awarded a Gold Badge in HackerRank for proficiency in multiple programming languages</li>
+            <li>Completed an Internship in Artificial Intelligence and Machine Learning provided by Google</li>
+            <li>Volunteered in a 24-hour Hackathon as a dedicated team member</li>
+            <li>Accomplished courses on Cybersecurity and Python on Cisco - Received a recognition badge</li>
+            <li>Participated in interviews for internships, including the Google Apprenticeship program</li>
+            <li>Active involvement in various technical and non-technical events</li>
+        </ul>
     </section>
 
     <!-- Contact Section -->
@@ -187,12 +203,13 @@
         <h2 class="text-2xl font-bold mb-4">Contact</h2>
         <div class="contact-details">
             <p>Email: varshichowdarymuppalla@gmail.com</p>
-            <p>LinkedIn: www.linkedin.com/in/varshitha-chowdary-7b7a25261</p>
-            <p>GitHub: https://github.com/Varshithachow</p>
+            <p>LinkedIn: [Varshitha Chowdary](www.linkedin.com/in/varshitha-chowdary-7b7a25261)</p>
+            <p>GitHub: [Varshithachow](https://github.com/Varshithachow)</p>
             <p>Contact No: 7013113227</p>
         </div>
     </section>
 
+    <!-- ParticleJS Script -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     <script>
@@ -202,8 +219,14 @@
 
     <script>
         particlesJS('particles-js', {
-            // ... (Refer to the previous ParticleJS configuration)
+            particles: {
+                // ... (Refer to the previous ParticleJS configuration)
+            },
+            interactivity: {
+                // ... (Refer to the previous ParticleJS configuration)
+            }
         });
     </script>
 </body>
 </html>
+
