@@ -3,230 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #fff;
-            margin: 0;
-        }
-
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        .container {
-            max-width: 1200px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            border-bottom: 2px solid #fff;
-            padding-bottom: 8px;
-            margin-bottom: 16px;
-            color: #fff;
-        }
-
-        .skills-list li {
-            list-style-type: none;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 10px;
-            margin: 8px 0;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-        }
-
-        .skills-list li:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .achievements-list li,
-        .projects-list div,
-        .contact-details p {
-            margin-bottom: 12px;
-        }
-
-        /* Additional Styles for Creativity */
-        header {
-            background-image: linear-gradient(to right, #1a1a1a, #444444);
-            padding: 80px 0;
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .hero-content h2 {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-        }
-
-        .bg-gradient {
-            background-image: linear-gradient(to right, #667eea, #764ba2);
-        }
-
-        .section-bg {
-            background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
-            padding: 40px 0;
-            border-radius: 10px;
-        }
-
-        .section h2,
-        .skills-list li,
-        .achievements-list li,
-        .projects-list div,
-        .contact-details p {
-            animation: fadeInUp 1s ease-in-out;
-        }
-
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Innovative Background Styles */
-        .background-code {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: url('https://your-background-image-url.jpg') repeat;
-            mix-blend-mode: overlay;
-        }
-
-        .overlay-pattern {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: url('https://your-overlay-pattern-image-url.png') repeat;
-        }
-    </style>
-    <title>Your Creative Portfolio</title>
+    <title>Varshitha Muppalla's Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900">
-
-    <!-- Background Particles Animation -->
-    <div id="particles-js"></div>
-
-    <!-- Innovative Background -->
-    <div class="background-code"></div>
-    <div class="overlay-pattern"></div>
-
-    <!-- Navigation -->
-    <nav class="bg-gradient p-4 text-white">
-        <div class="container mx-auto">
-            <h1 class="text-2xl font-bold animate__animated animate__fadeIn">Varshitha</h1>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="text-center">
-        <div class="container mx-auto hero-content">
-            <h2 class="text-4xl font-bold mb-4 animate__animated animate__fadeIn">Hello, I'm Varshitha</h2>
-            <p class="text-lg animate__animated animate__fadeIn">An Engineering Student passionate about AI, Machine Learning, and Creative Problem Solving</p>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Varshitha Muppalla</h1>
+            <p class="lead">Skilled Communicator | Expert Problem Solver | Data Structure Enthusiast | Innovative AI Student</p>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
-    <!-- Projects Section -->
-    <section class="container mx-auto section-bg section">
-        <h2 class="text-2xl font-bold mb-4">Projects</h2>
-        <div class="projects-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div>
-                <h3 class="text-lg font-bold">Brainy Bot</h3>
-                <p>An AI-powered conversational agent designed using Python, HTML, and CSS.</p>
-                <a href="https://github.com/Varshithachow/Brainy-Bot" class="text-blue-500">GitHub Link</a>
-            </div>
-            <div>
-                <h3 class="text-lg font-bold">Sudoku Puzzle</h3>
-                <p>A Data structures-based sudoku puzzle builder created using JavaScript.</p>
-                <a href="https://github.com/Varshithachow/Sudoku-puzzle" class="text-blue-500">GitHub Link</a>
-            </div>
-            <div>
-                <h3 class="text-lg font-bold">Portfolio Website</h3>
-                <p>This portfolio website itself</p>
-                <a href="https://github.com/Varshithachow/Portfoliowebsite/blob/main/Example.png" class="text-blue-500">GitHub Link</a>
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Education</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>VR Siddhartha College</h3>
+                    <p>B.Tech in Artificial Intelligence and Machine Learning (2023-2026)</p>
+                    <p>CGPA: 8.9/10</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="container mx-auto section-bg section">
-        <h2 class="text-2xl font-bold mb-4">Skills</h2>
-        <ul class="skills-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <li>Strong Problem Solving Abilities</li>
-            <li>Expertise in Data Structures and Algorithms</li>
-            <li>Proficiency in Java Programming</li>
-            <li>Python Programming</li>
-            <li>C Programming</li>
-            <li>Effective Social Media Management</li>
-            <li>Leadership and Teamwork Skills</li>
-            <li>Excellent Communication Skills</li>
-            <li>Effective Time Management</li>
-        </ul>
-    </section>
-
-    <!-- Achievements Section -->
-    <section class="container mx-auto section-bg section">
-        <h2 class="text-2xl font-bold mb-4">Achievements</h2>
-        <ul class="achievements-list">
-            <li>Secured the Runner-up position at Ideathon - Awarded 3k prize money</li>
-            <li>Awarded a Gold Badge in HackerRank for proficiency in multiple programming languages</li>
-            <li>Completed an Internship in Artificial Intelligence and Machine Learning provided by Google</li>
-            <li>Volunteered in a 24-hour Hackathon as a dedicated team member</li>
-            <li>Accomplished courses on Cybersecurity and Python on Cisco - Received a recognition badge</li>
-            <li>Participated in interviews for internships, including the Google Apprenticeship program</li>
-            <li>Active involvement in various technical and non-technical events</li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="container mx-auto section-bg section">
-        <h2 class="text-2xl font-bold mb-4">Contact</h2>
-        <div class="contact-details">
-            <p>Email: varshichowdarymuppalla@gmail.com</p>
-            <p>LinkedIn: [Varshitha Chowdary](www.linkedin.com/in/varshitha-chowdary-7b7a25261)</p>
-            <p>GitHub: [Varshithachow](https://github.com/Varshithachow)</p>
-            <p>Contact No: 7013113227</p>
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Java Programming</li>
+                        <li>Python Programming</li>
+                        <li>JavaScript</li>
+                        <li>Data Structures and Algorithms</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>CS Fundamentals</h3>
+                    <ul>
+                        <li>Object Oriented Programming</li>
+                        <li>Operating Systems</li>
+                        <li>Computer Networks</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ParticleJS Script -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
-    <script>
-        // Your existing JavaScript code for dynamic content
-        // ... (Refer to the previous JavaScript code)
-    </script>
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div class="text-center mb-4">
+                <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="ai">AI</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="web">Web</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="ml">Machine Learning</button>
+            </div>
+            <div class="row" id="project-list">
+                <div class="col-md-4 project-item" data-category="ai">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3>Gesture Painting</h3>
+                            <p>Eliminates the need for traditional input devices by 90% by allowing users to draw on screen using hand gestures.</p>
+                            <p><strong>Tech Stack:</strong> Python, OpenCV, Mediapipe</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#gestureModal">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item" data-category="ai">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3>BrainyBot</h3>
+                            <p>Optimized user interactions by implementing and customizing an AI chatbot with an accuracy of 85%.</p>
+                            <p><strong>Tech Stack:</strong> Python, HTML, CSS</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#brainyModal">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-item" data-category="web">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3>SudokuMind Space</h3>
+                            <p>Minimized efforts to solve a Sudoku puzzle by developing an interactive Sudoku solver.</p>
+                            <p><strong>Tech Stack:</strong> JavaScript, HTML, CSS</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#sudokuModal">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-        particlesJS('particles-js', {
-            particles: {
-                // ... (Refer to the previous ParticleJS configuration)
-            },
-            interactivity: {
-                // ... (Refer to the previous ParticleJS configuration)
-            }
-        });
-    </script>
+    <section id="experience" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Google | AIML Internship</h3>
+                    <p>Feb 2023 - Jun 2023 | Vijayawada</p>
+                    <p>Led the development of an innovative image classification system achieving 80% improvement in accuracy in classification.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Salesforce | Developer Intern</h3>
+                    <p>Oct 2023 - Dec 2023 | Vijayawada</p>
+                    <p>Solved organizational setup and data modeling challenges efficiently by enhancing understanding of Salesforce flows, security measures, and Apex testing. Implemented Lightning Web Components (LWC) and API integrations to optimize system performance and user experience by 90%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Achievements</h2>
+            <ul>
+                <li>2023: Secured 2nd position at Ideathon, surpassing 78% of students on technology.</li>
+                <li>2022: Triumphed in Competitive Programming challenge in our college.</li>
+                <li>2023: Validated as the best team leader for our team projects.</li>
+                <li>2023: Secured Gold Badge for problem-solving in Python at HackerRank.</li>
+                <li>2022: Dominated technical competitions at college by securing 1st place in 5 out of 8 events.</li>
+                <li>2023: Endorsed up to final interview for Google Apprenticeship.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contact</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="text-center">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:varshichowdary77@gmail.com">varshichowdary77@gmail.com</a></p>
+                        <p><i class="fas fa-phone"></i> +91 7013113227</p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/varshitha-muppalla/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+                            <a href="https://github.com/Varshithachow" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+                            <a href="https://leetcode.com/u/varshitha77/" target="_blank"><i class="fab fa-leetcode"></i> LeetCode</a> |
+                            <a href="https://www.geeksforgeeks.org/user/varshichowdarmbx/" target="_blank"><i class="fab fa-geeksforgeeks"></i> GeeksForGeeks</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="gestureModal" tabindex="-1" role="dialog" aria-labelledby="gestureModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gestureModalLabel">Gesture Painting</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Eliminates the need for traditional input devices by 90% by allowing users to draw on screen using hand gestures.</p>
+                    <p><strong>Tech Stack:</strong> Python, OpenCV, Mediapipe</p>
+                    <p><a href="https://github.com/Varshithachow/GESTURE_PAINTING" target="_blank">View Project on GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="brainyModal" tabindex="-1" role="dialog" aria-labelledby="brainyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="brainyModalLabel">BrainyBot</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Optimized user interactions by implementing and customizing an AI chatbot with an accuracy of 85%.</p>
+                    <p><strong>Tech Stack:</strong> Python, HTML, CSS</p>
+                    <p><a href="https://github.com/Varshithachow/Brainy-Bot" target="_blank">View Project on GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sudokuModal" tabindex="-1" role="dialog" aria-labelledby="sudokuModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sudokuModalLabel">SudokuMind Space</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Minimized efforts to solve a Sudoku puzzle by developing an interactive Sudoku solver.</p>
+                    <p><strong>Tech Stack:</strong> JavaScript, HTML, CSS</p>
+                    <p><a href="https://github.com/Varshithachow/Sudoku-puzzle" target="_blank">View Project on GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Varshitha Muppalla. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
